@@ -1,0 +1,343 @@
+EV Range API - Frontend Integration Guide
+1. Authentication Flow
+1.1 User Login
+javascript
+// Example: Login request
+const login = async (email, password) => {
+  const response = await fetch('/auth/login', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({email, password})
+  });
+  
+  const data = await response.json();
+  // Store token
+  localStorage.setItem('auth_token', data.access_token);
+  localStorage.setItem('refresh_token', data.refresh_token);
+  
+  return data;
+};
+1.2 Token Management
+javascript
+// Interceptor for adding token to requests
+const apiClient = axios.create({
+  baseURL: 'http://your-api-url.com'
+});
+
+apiClient.interceptors.request.use(config => {
+  const token = localStorage.getItem('auth_token');
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
+});
+
+// Handle token refresh
+apiClient.interceptors.response.use(
+  response => response,
+  async error => {
+    if (error.response.status === 401) {
+      // Refresh token logic
+      await refreshToken();
+      // Retry original request
+      return apiClient(error.config);
+    }
+    return Promise.reject(error);
+  }
+);
+2. Range Calculation Integration
+2.1 Making the Request
+javascript
+// Example React component
+import React, { useState } from 'react';
+import { calculateRange } from '../api/suggestions';
+
+const RangeCalculator = () => {
+  const [rangeData, setRangeData] = useState(null);
+  const [loading, setLoading] = useState(false);
+  
+  const calculateRange = async (params) => {
+    setLoading(true);
+    try {
+      const data = await calculateRange(params);
+      setRangeData(data);
+    } catch (error) {
+      console.error('Error calculating range:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  
+  return (
+    <div>
+      {/* UI components */}
+    </div>
+  );
+};
+2.2 API Service Layer
+javascript
+// api/suggestions.js
+export const calculateRange = async (params) => {
+  const queryParams = new URLSearchParams({
+    latitude: params.latitude,
+    longitude: params.longitude,
+    car_id: params.carId,
+    battery_percentage: params.batteryPercentage,
+    terrain_factor: params.terrainFactor || 1.0,
+    weather_factor: params.weatherFactor || 1.0
+  });
+  
+  const response = await fetch(
+    `/suggestions/range-calculation?${queryParams}`,
+    {
+      headers: {
+        'Authorization': `Bearer ${localStorage.getItem('auth_token')}`
+      }
+    }
+  );
+  
+  if (!response.ok) {
+    throw new Error('Range calculation failed');
+  }
+  
+  return await response.json();
+};
+3. Data Visualization Components
+3.1 Range Display Component
+javascript
+// components/RangeDisplay.jsx
+const RangeDisplay = ({ rangeData }) => {
+  return (
+    <div className="range-display">
+      <h3>Range Analysis</h3>
+      <div className="range-metrics">
+        <div className="metric">
+          <span className="label">Max Range</span>
+          <span className="value">
+            {rangeData.range_analysis.max_distance_km} km
+          </span>
+        </div>
+        <div className="metric">
+          <span className="label">Safe Range</span>
+          <span className="value">
+            {(rangeData.range_analysis.max_distance_km * 0.8).toFixed(1)} km
+          </span>
+        </div>
+        <div className="metric">
+          <span className="label">Current Battery</span>
+          <span className="value">
+            {rangeData.car_info.current_battery_percentage}%
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+};
+3.2 Station List Component
+javascript
+// components/StationList.jsx
+const StationList = ({ stations }) => {
+  return (
+    <div className="station-list">
+      <h4>Nearby Charging Stations</h4>
+      {stations.map((station, index) => (
+        <div key={index} className="station-card">
+          <h5>{station.name}</h5>
+          <p>Distance: {station.distance_km} km</p>
+          <p>Available Ports: {station.available_ports}/{station.total_ports}</p>
+          <p>Price: ${station.pricing_per_kwh}/kWh</p>
+          <button 
+            className="navigate-btn"
+            onClick={() => navigateToStation(station)}
+          >
+            Navigate
+          </button>
+        </div>
+      ))}
+    </div>
+  );
+};
+4. Map Integration (Google Maps/Mapbox)
+4.1 Displaying Range Circle
+javascript
+// Map visualization component
+import { GoogleMap, Circle } from '@react-google-maps/api';
+
+const RangeMap = ({ center, safeRange }) => {
+  const mapOptions = {
+    center,
+    zoom: 12
+  };
+  
+  return (
+    <GoogleMap
+      mapContainerStyle={{ width: '100%', height: '400px' }}
+      options={mapOptions}
+    >
+      {/* Safe range circle */}
+      <Circle
+        center={center}
+        radius={safeRange * 1000} // Convert km to meters
+        options={{
+          fillColor: '#4CAF50',
+          fillOpacity: 0.2,
+          strokeColor: '#4CAF50',
+          strokeOpacity: 0.8,
+          strokeWeight: 2
+        }}
+      />
+      
+      {/* Current location marker */}
+      <Marker position={center} />
+      
+      {/* Station markers */}
+      {stations.map(station => (
+        <Marker
+          key={station.id}
+          position={{ lat: station.latitude, lng: station.longitude }}
+          icon={{
+            url: '/charging-station-icon.png',
+            scaledSize: new window.google.maps.Size(30, 30)
+          }}
+        />
+      ))}
+    </GoogleMap>
+  );
+};
+5. Error Handling in UI
+5.1 Error Boundary Component
+javascript
+// components/ErrorBoundary.jsx
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false, error: null };
+  }
+  
+  static getDerivedStateFromError(error) {
+    return { hasError: true, error };
+  }
+  
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="error-container">
+          <h3>Something went wrong</h3>
+          <p>{this.state.error.message}</p>
+          <button onClick={() => window.location.reload()}>
+            Reload Application
+          </button>
+        </div>
+      );
+    }
+    
+    return this.props.children;
+  }
+}
+5.2 API Error Handling
+javascript
+// utils/apiHelpers.js
+export const handleApiError = (error) => {
+  if (error.response) {
+    switch (error.response.status) {
+      case 401:
+        return 'Session expired. Please login again.';
+      case 403:
+        return 'You do not have permission to access this resource.';
+      case 404:
+        return 'Resource not found.';
+      case 500:
+        return 'Server error. Please try again later.';
+      default:
+        return error.response.data?.detail || 'An error occurred';
+    }
+  } else if (error.request) {
+    return 'Network error. Please check your connection.';
+  } else {
+    return error.message || 'An unexpected error occurred';
+  }
+};
+6. Loading States and UX
+6.1 Skeleton Loading Components
+javascript
+// components/SkeletonLoader.jsx
+const SkeletonLoader = () => {
+  return (
+    <div className="skeleton-container">
+      <div className="skeleton-header"></div>
+      <div className="skeleton-metrics">
+        {[1, 2, 3].map(i => (
+          <div key={i} className="skeleton-metric"></div>
+        ))}
+      </div>
+      <div className="skeleton-stations">
+        {[1, 2, 3, 4, 5].map(i => (
+          <div key={i} className="skeleton-station"></div>
+        ))}
+      </div>
+    </div>
+  );
+};
+7. State Management (Redux/Context)
+7.1 Context API Example
+javascript
+// context/RangeContext.jsx
+import React, { createContext, useContext, useReducer } from 'react';
+
+const RangeContext = createContext();
+
+const rangeReducer = (state, action) => {
+  switch (action.type) {
+    case 'SET_RANGE_DATA':
+      return { ...state, rangeData: action.payload };
+    case 'SET_LOADING':
+      return { ...state, loading: action.payload };
+    case 'SET_ERROR':
+      return { ...state, error: action.payload };
+    default:
+      return state;
+  }
+};
+
+export const RangeProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(rangeReducer, {
+    rangeData: null,
+    loading: false,
+    error: null
+  });
+  
+  return (
+    <RangeContext.Provider value={{ state, dispatch }}>
+      {children}
+    </RangeContext.Provider>
+  );
+};
+
+export const useRange = () => useContext(RangeContext);
+8. Mobile Responsive Design
+8.1 Responsive CSS Classes
+css
+/* styles.css */
+.range-container {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .range-container {
+    padding: 10px;
+  }
+  
+  .station-card {
+    flex-direction: column;
+  }
+  
+  .range-metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .range-metrics {
+    grid-template-columns: 1fr;
+  }
+}

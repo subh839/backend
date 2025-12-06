@@ -1,0 +1,126 @@
+station_id,name,address,city,state,zip_code,latitude,longitude,charger_type,operator,available_chargers,total_chargers,power_kw,cost_per_kwh,is_24_7,amenities,rating,created_at
+STA1001,Tesla New York #1,3053 Pine St,New York,NY,54438,40.656776,-73.953885,DC Fast,Tesla,6,7,250,0.44,False,"[""Restrooms""]",3.5,2025-12-06T20:14:35.901863
+STA1002,Blink New York #2,7455 Oak St,New York,NY,63807,40.731054,-73.94981,CHAdeMO,Blink,1,2,11,0.31,True,"[""Restaurant"", ""Waiting Area""]",3.6,2025-12-06T20:14:35.901863
+STA1003,Tesla New York #3,8584 Pine St,New York,NY,90243,40.691417,-73.928529,Level 2,Tesla,2,3,11,0.3,True,"[""Shopping"", ""Coffee""]",4.3,2025-12-06T20:14:35.902394
+STA1004,Tesla New York #4,4474 Cedar St,New York,NY,23749,40.723571,-73.927781,Tesla Supercharger,Tesla,1,9,150,0.44,False,"[""Coffee"", ""Restrooms"", ""Shopping"", ""Waiting Area""]",5.0,2025-12-06T20:14:35.902394
+STA1005,Volta New York #5,9093 Main St,New York,NY,57741,40.800759,-73.989251,Level 2,Volta,2,2,11,0.22,False,"[""Shopping"", ""Waiting Area"", ""Restaurant""]",4.9,2025-12-06T20:14:35.902394
+STA1006,EVgo Los Angeles #1,1517 Cedar St,Los Angeles,CA,83058,34.014963,-118.319646,DC Fast,EVgo,1,10,150,0.42,False,"[""Coffee"", ""Waiting Area""]",3.5,2025-12-06T20:14:35.902394
+STA1007,Volta Los Angeles #2,2554 Oak St,Los Angeles,CA,60242,33.959784,-118.332714,Tesla Supercharger,Volta,5,5,150,0.36,False,"[""Restrooms""]",4.4,2025-12-06T20:14:35.902394
+STA1008,ChargePoint Los Angeles #3,6375 Pine St,Los Angeles,CA,82464,33.988965,-118.260901,DC Fast,ChargePoint,5,6,350,0.42,True,"[""WiFi"", ""Shopping"", ""Waiting Area"", ""Restrooms""]",4.0,2025-12-06T20:14:35.902394
+STA1009,ChargePoint Los Angeles #4,1825 Cedar St,Los Angeles,CA,26843,34.013626,-118.256951,Tesla Supercharger,ChargePoint,9,11,350,0.39,False,"[""WiFi"", ""Coffee"", ""Waiting Area""]",3.9,2025-12-06T20:14:35.902394
+STA1010,Volta Los Angeles #5,8386 Pine St,Los Angeles,CA,63637,33.98426,-118.312876,CHAdeMO,Volta,0,6,7.2,0.2,False,"[""Coffee""]",4.6,2025-12-06T20:14:35.902394
+STA1011,ChargePoint Chicago #1,1455 Maple St,Chicago,IL,80201,41.826783,-87.724447,DC Fast,ChargePoint,1,7,350,0.37,False,"[""Restrooms"", ""Restaurant"", ""Waiting Area"", ""WiFi""]",4.7,2025-12-06T20:14:35.902394
+STA1012,ChargePoint Chicago #2,6914 Main St,Chicago,IL,42515,41.89601,-87.545402,Level 2,ChargePoint,3,4,11,0.26,True,"[""Coffee""]",3.9,2025-12-06T20:14:35.902394
+STA1013,Tesla Chicago #3,9484 Cedar St,Chicago,IL,30756,41.956129,-87.688427,DC Fast,Tesla,5,11,250,0.49,True,"[""Restaurant"", ""Shopping"", ""Coffee""]",3.8,2025-12-06T20:14:35.902394
+STA1014,ChargePoint Chicago #4,3266 Pine St,Chicago,IL,16643,41.816004,-87.552467,CCS Combo,ChargePoint,1,5,7.2,0.31,False,"[""Shopping"", ""WiFi"", ""Restaurant"", ""Waiting Area""]",4.0,2025-12-06T20:14:35.902394
+STA1015,Electrify America Chicago #5,2703 Oak St,Chicago,IL,85173,41.871556,-87.66325,DC Fast,Electrify America,0,12,150,0.42,False,"[""Waiting Area"", ""Shopping"", ""WiFi""]",4.3,2025-12-06T20:14:35.902394
+STA1016,Blink Houston #1,7043 Maple St,Houston,TX,25134,29.791028,-95.429478,CCS Combo,Blink,3,4,11,0.31,False,"[""Restrooms"", ""WiFi""]",4.9,2025-12-06T20:14:35.902394
+STA1017,Blink Houston #2,3379 Maple St,Houston,TX,44841,29.856979,-95.276509,Level 2,Blink,1,4,11,0.27,True,"[""WiFi"", ""Shopping"", ""Restrooms"", ""Restaurant""]",5.0,2025-12-06T20:14:35.902394
+STA1018,EVgo Houston #3,1937 Pine St,Houston,TX,36114,29.783116,-95.338518,CCS Combo,EVgo,0,2,11,0.24,False,"[""Restaurant"", ""Restrooms"", ""Waiting Area""]",3.9,2025-12-06T20:14:35.902394
+STA1019,Blink Houston #4,351 Main St,Houston,TX,65427,29.68502,-95.463377,CCS Combo,Blink,0,4,22,0.21,True,"[""Waiting Area"", ""Restaurant"", ""Coffee"", ""Restrooms""]",4.4,2025-12-06T20:14:35.902394
+STA1020,EVgo Houston #5,2904 Maple St,Houston,TX,35848,29.742652,-95.467714,Level 2,EVgo,3,4,7.2,0.26,False,"[""Coffee"", ""WiFi"", ""Shopping""]",4.6,2025-12-06T20:14:35.902394
+STA1021,Blink Phoenix #1,3396 Main St,Phoenix,AZ,66510,33.469291,-112.050446,Level 2,Blink,2,2,7.2,0.24,True,"[""Waiting Area"", ""Restaurant""]",3.6,2025-12-06T20:14:35.902394
+STA1022,Electrify America Phoenix #2,4240 Oak St,Phoenix,AZ,45399,33.384744,-112.084703,CCS Combo,Electrify America,0,3,7.2,0.26,True,"[""Shopping""]",4.6,2025-12-06T20:14:35.902394
+STA1023,Electrify America Phoenix #3,9802 Oak St,Phoenix,AZ,84136,33.505535,-111.976319,CHAdeMO,Electrify America,0,4,7.2,0.28,True,"[""Restaurant"", ""Coffee"", ""Restrooms"", ""Waiting Area""]",4.5,2025-12-06T20:14:35.902394
+STA1024,Volta Phoenix #4,6516 Oak St,Phoenix,AZ,42737,33.539794,-112.134156,CCS Combo,Volta,0,3,7.2,0.24,True,"[""Shopping"", ""Waiting Area"", ""WiFi""]",4.9,2025-12-06T20:14:35.902394
+STA1025,EVgo Phoenix #5,5502 Pine St,Phoenix,AZ,23100,33.526405,-112.139366,CHAdeMO,EVgo,1,2,22,0.3,True,"[""Restaurant"", ""Shopping""]",4.3,2025-12-06T20:14:35.902394
+STA1026,ChargePoint Philadelphia #1,1813 Cedar St,Philadelphia,PA,77676,39.964225,-75.260641,DC Fast,ChargePoint,8,11,250,0.37,False,"[""Shopping"", ""Restaurant""]",4.5,2025-12-06T20:14:35.902394
+STA1027,Blink Philadelphia #2,4367 Maple St,Philadelphia,PA,24064,39.861361,-75.185352,Level 2,Blink,5,6,22,0.33,False,"[""Restrooms"", ""Coffee"", ""Waiting Area""]",4.4,2025-12-06T20:14:35.902394
+STA1028,EVgo Philadelphia #3,6733 Maple St,Philadelphia,PA,63371,39.861412,-75.232859,DC Fast,EVgo,0,11,150,0.48,False,"[""Waiting Area""]",4.4,2025-12-06T20:14:35.902394
+STA1029,Blink Philadelphia #4,8559 Cedar St,Philadelphia,PA,55231,39.911224,-75.187114,Level 2,Blink,5,5,11,0.29,False,"[""Shopping""]",4.2,2025-12-06T20:14:35.902394
+STA1030,Tesla Philadelphia #5,2504 Cedar St,Philadelphia,PA,75885,39.865854,-75.195168,CCS Combo,Tesla,2,3,7.2,0.34,True,"[""Shopping"", ""Restrooms""]",4.3,2025-12-06T20:14:35.902394
+STA1031,Volta San Antonio #1,7628 Maple St,San Antonio,TX,20699,29.479711,-98.539449,Tesla Supercharger,Volta,4,9,250,0.37,True,"[""Restaurant"", ""Waiting Area"", ""WiFi"", ""Coffee""]",4.8,2025-12-06T20:14:35.902394
+STA1032,EVgo San Antonio #2,1514 Main St,San Antonio,TX,30262,29.492011,-98.51353,CHAdeMO,EVgo,0,3,11,0.26,False,"[""Shopping"", ""Waiting Area"", ""Restrooms"", ""Coffee""]",3.5,2025-12-06T20:14:35.902394
+STA1033,Electrify America San Antonio #3,2556 Oak St,San Antonio,TX,41201,29.343931,-98.520766,CHAdeMO,Electrify America,2,2,22,0.35,False,"[""Coffee"", ""WiFi"", ""Restaurant"", ""Shopping""]",4.5,2025-12-06T20:14:35.902394
+STA1034,Volta San Antonio #4,3075 Oak St,San Antonio,TX,92764,29.383327,-98.498585,CCS Combo,Volta,1,5,7.2,0.25,False,"[""WiFi"", ""Restaurant"", ""Coffee""]",3.6,2025-12-06T20:14:35.902394
+STA1035,Blink San Antonio #5,6921 Cedar St,San Antonio,TX,26289,29.401627,-98.572032,Tesla Supercharger,Blink,3,8,350,0.37,False,"[""Waiting Area""]",4.0,2025-12-06T20:14:35.902394
+STA1036,Tesla San Diego #1,3940 Pine St,San Diego,CA,84060,32.751587,-117.194174,CHAdeMO,Tesla,0,2,11,0.26,True,"[""Waiting Area"", ""WiFi""]",4.8,2025-12-06T20:14:35.902394
+STA1037,EVgo San Diego #2,2817 Main St,San Diego,CA,38333,32.793219,-117.229348,CHAdeMO,EVgo,5,6,11,0.23,True,"[""Restrooms"", ""Shopping""]",4.1,2025-12-06T20:14:35.902394
+STA1038,Electrify America San Diego #3,3587 Main St,San Diego,CA,11636,32.766224,-117.217056,CCS Combo,Electrify America,0,4,7.2,0.27,False,"[""Coffee""]",3.6,2025-12-06T20:14:35.902394
+STA1039,ChargePoint San Diego #4,5660 Oak St,San Diego,CA,15942,32.690313,-117.210564,Tesla Supercharger,ChargePoint,6,12,250,0.35,False,"[""WiFi""]",3.7,2025-12-06T20:14:35.902394
+STA1040,Electrify America San Diego #5,710 Cedar St,San Diego,CA,48813,32.770346,-117.159985,Level 2,Electrify America,1,3,22,0.25,True,"[""WiFi""]",4.3,2025-12-06T20:14:35.902394
+STA1041,EVgo Dallas #1,5574 Cedar St,Dallas,TX,72884,32.803073,-96.778078,CHAdeMO,EVgo,0,4,7.2,0.34,True,"[""Coffee"", ""WiFi"", ""Restaurant""]",3.6,2025-12-06T20:14:35.902394
+STA1042,Volta Dallas #2,8591 Pine St,Dallas,TX,41792,32.800052,-96.834367,CHAdeMO,Volta,4,5,22,0.25,False,"[""Restrooms"", ""Waiting Area"", ""WiFi""]",3.9,2025-12-06T20:14:35.902394
+STA1043,Tesla Dallas #3,3453 Maple St,Dallas,TX,99241,32.722728,-96.807736,CHAdeMO,Tesla,1,2,7.2,0.27,False,"[""Restaurant"", ""Shopping""]",3.7,2025-12-06T20:14:35.902394
+STA1044,Tesla Dallas #4,7560 Main St,Dallas,TX,89354,32.825359,-96.727696,CCS Combo,Tesla,0,4,11,0.28,True,"[""Restaurant"", ""Coffee"", ""Shopping"", ""WiFi""]",3.6,2025-12-06T20:14:35.902394
+STA1045,Tesla Dallas #5,7520 Oak St,Dallas,TX,10519,32.725741,-96.779342,Level 2,Tesla,1,4,22,0.29,False,"[""WiFi"", ""Restaurant"", ""Waiting Area""]",4.8,2025-12-06T20:14:35.902394
+STA1046,Electrify America San Jose #1,101 Cedar St,San Jose,CA,99650,37.374011,-121.96462,CCS Combo,Electrify America,5,5,22,0.3,True,"[""Restaurant"", ""Restrooms""]",4.0,2025-12-06T20:14:35.902394
+STA1047,Electrify America San Jose #2,2201 Main St,San Jose,CA,32210,37.431142,-121.828924,CHAdeMO,Electrify America,0,3,7.2,0.25,False,"[""Restrooms"", ""Waiting Area""]",3.6,2025-12-06T20:14:35.902394
+STA1048,EVgo San Jose #3,8952 Cedar St,San Jose,CA,16376,37.392041,-121.966477,DC Fast,EVgo,5,11,150,0.37,False,"[""Restrooms"", ""Coffee"", ""Shopping"", ""WiFi""]",3.9,2025-12-06T20:14:35.903193
+STA1049,EVgo San Jose #4,3528 Maple St,San Jose,CA,25200,37.313596,-121.909507,DC Fast,EVgo,6,8,250,0.36,True,"[""WiFi"", ""Coffee"", ""Restrooms"", ""Waiting Area""]",4.8,2025-12-06T20:14:35.903193
+STA1050,Tesla San Jose #5,3970 Pine St,San Jose,CA,34952,37.352465,-121.853556,DC Fast,Tesla,4,7,250,0.48,False,"[""Coffee"", ""WiFi"", ""Shopping""]",3.8,2025-12-06T20:14:35.903193
+STA1051,Volta Austin #1,1508 Maple St,Austin,TX,29643,30.35953,-97.703709,Level 2,Volta,0,4,7.2,0.25,True,"[""Waiting Area"", ""Shopping""]",4.7,2025-12-06T20:14:35.903193
+STA1052,Electrify America Austin #2,6381 Oak St,Austin,TX,97264,30.349178,-97.754208,CCS Combo,Electrify America,1,2,22,0.21,True,"[""Coffee"", ""Restrooms""]",3.9,2025-12-06T20:14:35.903193
+STA1053,Blink Austin #3,4674 Cedar St,Austin,TX,80159,30.352276,-97.835046,Tesla Supercharger,Blink,5,6,350,0.44,True,"[""Waiting Area"", ""Shopping"", ""Restrooms"", ""WiFi""]",4.7,2025-12-06T20:14:35.903193
+STA1054,Volta Austin #4,7624 Maple St,Austin,TX,86085,30.325396,-97.700949,CHAdeMO,Volta,3,3,22,0.3,False,"[""Restaurant"", ""Coffee"", ""Restrooms"", ""Shopping""]",4.0,2025-12-06T20:14:35.903193
+STA1055,EVgo Austin #5,410 Cedar St,Austin,TX,85277,30.337919,-97.715056,Level 2,EVgo,1,6,11,0.22,False,"[""Shopping"", ""Coffee"", ""WiFi"", ""Waiting Area""]",3.9,2025-12-06T20:14:35.903193
+STA1056,Blink Jacksonville #1,8283 Pine St,Jacksonville,FL,91439,30.409347,-81.647302,CCS Combo,Blink,3,3,22,0.27,True,"[""WiFi"", ""Restaurant""]",3.8,2025-12-06T20:14:35.903193
+STA1057,ChargePoint Jacksonville #2,4903 Cedar St,Jacksonville,FL,15431,30.305192,-81.732984,Level 2,ChargePoint,4,6,11,0.34,True,"[""Coffee"", ""Waiting Area""]",4.3,2025-12-06T20:14:35.903193
+STA1058,Blink Jacksonville #3,1720 Oak St,Jacksonville,FL,12910,30.388413,-81.605001,Level 2,Blink,2,3,11,0.22,True,"[""Coffee""]",5.0,2025-12-06T20:14:35.903193
+STA1059,ChargePoint Jacksonville #4,2823 Pine St,Jacksonville,FL,46007,30.404905,-81.694944,Level 2,ChargePoint,3,5,7.2,0.35,True,"[""Shopping"", ""WiFi""]",4.2,2025-12-06T20:14:35.903193
+STA1060,Electrify America Jacksonville #5,5302 Pine St,Jacksonville,FL,37502,30.356032,-81.707746,CHAdeMO,Electrify America,3,5,11,0.25,True,"[""Restaurant"", ""Coffee"", ""Waiting Area""]",4.7,2025-12-06T20:14:35.903193
+STA1061,Tesla Fort Worth #1,3717 Maple St,Fort Worth,TX,12920,32.668241,-97.34963,CCS Combo,Tesla,2,5,7.2,0.25,False,"[""Restrooms""]",3.9,2025-12-06T20:14:35.903193
+STA1062,ChargePoint Fort Worth #2,4554 Main St,Fort Worth,TX,71684,32.850476,-97.429666,DC Fast,ChargePoint,2,4,350,0.42,False,"[""Restaurant"", ""Waiting Area""]",5.0,2025-12-06T20:14:35.903193
+STA1063,Electrify America Fort Worth #3,2638 Oak St,Fort Worth,TX,32770,32.744762,-97.408292,DC Fast,Electrify America,0,9,350,0.4,False,"[""Restaurant"", ""Restrooms"", ""Coffee""]",5.0,2025-12-06T20:14:35.903193
+STA1064,Blink Fort Worth #4,2166 Cedar St,Fort Worth,TX,35483,32.696492,-97.231323,DC Fast,Blink,2,5,250,0.48,True,"[""Restaurant"", ""Shopping"", ""Coffee""]",4.5,2025-12-06T20:14:35.903193
+STA1065,Tesla Fort Worth #5,1320 Maple St,Fort Worth,TX,22476,32.689651,-97.372984,Level 2,Tesla,5,6,7.2,0.21,False,"[""Coffee""]",4.5,2025-12-06T20:14:35.903193
+STA1066,Electrify America Columbus #1,9916 Oak St,Columbus,OH,90337,40.00117,-83.019812,Level 2,Electrify America,2,3,11,0.25,True,"[""WiFi"", ""Waiting Area"", ""Restaurant"", ""Restrooms""]",4.2,2025-12-06T20:14:35.903193
+STA1067,Volta Columbus #2,5552 Pine St,Columbus,OH,74249,39.885931,-82.996999,CHAdeMO,Volta,0,2,22,0.21,False,"[""Shopping"", ""Restrooms""]",4.3,2025-12-06T20:14:35.903193
+STA1068,Electrify America Columbus #3,2906 Pine St,Columbus,OH,18441,39.888732,-83.051072,CHAdeMO,Electrify America,0,2,7.2,0.32,True,"[""Restaurant""]",4.0,2025-12-06T20:14:35.903193
+STA1069,Tesla Columbus #4,4391 Oak St,Columbus,OH,86770,40.002312,-82.988302,CCS Combo,Tesla,0,3,11,0.24,True,"[""Shopping"", ""Restrooms"", ""WiFi""]",3.9,2025-12-06T20:14:35.903193
+STA1070,Tesla Columbus #5,9222 Oak St,Columbus,OH,13012,39.919991,-83.046023,CHAdeMO,Tesla,3,5,7.2,0.27,False,"[""Coffee"", ""Waiting Area""]",3.7,2025-12-06T20:14:35.903193
+STA1071,Electrify America Charlotte #1,1105 Maple St,Charlotte,NC,15261,35.178732,-80.892758,DC Fast,Electrify America,2,6,250,0.42,True,"[""Restaurant"", ""Coffee""]",4.9,2025-12-06T20:14:35.903193
+STA1072,Tesla Charlotte #2,211 Main St,Charlotte,NC,31453,35.320646,-80.846427,Level 2,Tesla,4,4,7.2,0.21,True,"[""WiFi"", ""Shopping"", ""Restaurant""]",3.6,2025-12-06T20:14:35.903545
+STA1073,Tesla Charlotte #3,9251 Main St,Charlotte,NC,27222,35.168399,-80.855696,DC Fast,Tesla,9,12,250,0.4,False,"[""Restaurant"", ""Shopping"", ""WiFi""]",4.2,2025-12-06T20:14:35.903545
+STA1074,Blink Charlotte #4,2177 Main St,Charlotte,NC,75934,35.326507,-80.792008,CHAdeMO,Blink,3,4,11,0.23,False,"[""Waiting Area"", ""Shopping"", ""Restrooms"", ""Coffee""]",4.2,2025-12-06T20:14:35.903545
+STA1075,Electrify America Charlotte #5,9381 Maple St,Charlotte,NC,71263,35.1902,-80.765082,Level 2,Electrify America,5,5,11,0.23,True,"[""Waiting Area"", ""Restrooms"", ""Coffee""]",4.6,2025-12-06T20:14:35.903545
+STA1076,Electrify America San Francisco #1,6230 Cedar St,San Francisco,CA,57775,37.725177,-122.32982,CCS Combo,Electrify America,3,6,7.2,0.29,True,"[""Waiting Area"", ""WiFi""]",4.1,2025-12-06T20:14:35.903545
+STA1077,ChargePoint San Francisco #2,760 Maple St,San Francisco,CA,47455,37.789727,-122.501945,Tesla Supercharger,ChargePoint,0,7,250,0.43,False,"[""Coffee"", ""Shopping""]",3.6,2025-12-06T20:14:35.903545
+STA1078,Electrify America San Francisco #3,1977 Main St,San Francisco,CA,30744,37.855494,-122.408728,Tesla Supercharger,Electrify America,0,12,150,0.38,True,"[""WiFi""]",4.2,2025-12-06T20:14:35.903545
+STA1079,Tesla San Francisco #4,7524 Oak St,San Francisco,CA,46860,37.850233,-122.458008,Level 2,Tesla,0,3,22,0.22,False,"[""Coffee"", ""Restrooms"", ""Shopping"", ""WiFi""]",3.8,2025-12-06T20:14:35.903545
+STA1080,Tesla San Francisco #5,3040 Pine St,San Francisco,CA,79629,37.830083,-122.386119,DC Fast,Tesla,4,6,150,0.48,True,"[""Restrooms"", ""Shopping""]",4.5,2025-12-06T20:14:35.903545
+STA1081,EVgo Indianapolis #1,4230 Oak St,Indianapolis,IN,39215,39.725263,-86.185342,Tesla Supercharger,EVgo,10,11,150,0.44,True,"[""Coffee"", ""Restrooms""]",4.4,2025-12-06T20:14:35.903545
+STA1082,Blink Indianapolis #2,1816 Cedar St,Indianapolis,IN,90953,39.742905,-86.07586,Tesla Supercharger,Blink,6,10,350,0.39,False,"[""Restrooms"", ""Coffee"", ""Shopping"", ""Waiting Area""]",4.6,2025-12-06T20:14:35.903545
+STA1083,ChargePoint Indianapolis #3,8570 Cedar St,Indianapolis,IN,29049,39.830515,-86.217344,CHAdeMO,ChargePoint,1,5,11,0.35,False,"[""Coffee""]",4.0,2025-12-06T20:14:35.903545
+STA1084,Electrify America Indianapolis #4,281 Maple St,Indianapolis,IN,95838,39.680202,-86.175452,Tesla Supercharger,Electrify America,4,5,250,0.49,True,"[""Restrooms"", ""Coffee""]",3.7,2025-12-06T20:14:35.903545
+STA1085,Electrify America Indianapolis #5,4080 Maple St,Indianapolis,IN,90147,39.751676,-86.188673,Level 2,Electrify America,1,3,11,0.27,True,"[""Restrooms"", ""Shopping""]",4.5,2025-12-06T20:14:35.903545
+STA1086,ChargePoint Seattle #1,3030 Cedar St,Seattle,WA,64271,47.650385,-122.354008,Level 2,ChargePoint,0,5,7.2,0.35,True,"[""Shopping"", ""Coffee""]",3.9,2025-12-06T20:14:35.903545
+STA1087,Electrify America Seattle #2,2030 Oak St,Seattle,WA,15445,47.608378,-122.271952,CCS Combo,Electrify America,2,6,7.2,0.3,False,"[""Restrooms"", ""WiFi"", ""Shopping"", ""Coffee""]",4.7,2025-12-06T20:14:35.903545
+STA1088,Blink Seattle #3,1064 Pine St,Seattle,WA,64747,47.705937,-122.237012,DC Fast,Blink,11,11,150,0.49,True,"[""Restrooms"", ""WiFi"", ""Waiting Area"", ""Shopping""]",3.6,2025-12-06T20:14:35.903545
+STA1089,EVgo Seattle #4,7555 Cedar St,Seattle,WA,63591,47.67738,-122.368797,CCS Combo,EVgo,2,4,22,0.2,False,"[""Restrooms"", ""Shopping"", ""Coffee""]",4.0,2025-12-06T20:14:35.903545
+STA1090,Electrify America Seattle #5,9093 Main St,Seattle,WA,91487,47.596642,-122.357768,DC Fast,Electrify America,2,8,250,0.45,True,"[""Restaurant"", ""Shopping"", ""Waiting Area"", ""Restrooms""]",3.8,2025-12-06T20:14:35.903545
+STA1091,Electrify America Denver #1,1783 Oak St,Denver,CO,79084,39.776871,-105.032307,DC Fast,Electrify America,6,10,150,0.37,True,"[""Waiting Area""]",4.3,2025-12-06T20:14:35.903545
+STA1092,Electrify America Denver #2,3408 Main St,Denver,CO,86497,39.711422,-105.068693,Tesla Supercharger,Electrify America,1,4,150,0.46,False,"[""Restrooms""]",3.6,2025-12-06T20:14:35.903545
+STA1093,EVgo Denver #3,817 Cedar St,Denver,CO,48862,39.695074,-105.013359,CCS Combo,EVgo,1,3,11,0.35,True,"[""Coffee"", ""WiFi"", ""Restaurant""]",4.2,2025-12-06T20:14:35.903545
+STA1094,Electrify America Denver #4,8023 Main St,Denver,CO,49474,39.784874,-104.965128,DC Fast,Electrify America,3,11,350,0.42,True,"[""WiFi"", ""Restrooms"", ""Waiting Area"", ""Shopping""]",4.2,2025-12-06T20:14:35.903545
+STA1095,ChargePoint Denver #5,2611 Main St,Denver,CO,37717,39.778286,-104.924543,CHAdeMO,ChargePoint,4,4,22,0.28,False,"[""Coffee"", ""Restrooms""]",4.8,2025-12-06T20:14:35.903545
+STA1096,Tesla Washington #1,6853 Maple St,Washington,DC,31510,38.895657,-76.998871,DC Fast,Tesla,5,8,250,0.41,False,"[""Shopping"", ""Restaurant"", ""WiFi""]",4.2,2025-12-06T20:14:35.903545
+STA1097,ChargePoint Washington #2,6442 Maple St,Washington,DC,82537,38.885152,-77.130974,CCS Combo,ChargePoint,2,3,7.2,0.34,False,"[""Restaurant"", ""Waiting Area"", ""WiFi""]",4.6,2025-12-06T20:14:35.903545
+STA1098,Tesla Washington #3,4752 Main St,Washington,DC,29055,38.904014,-76.970223,Level 2,Tesla,1,3,22,0.27,False,"[""Restrooms"", ""Coffee""]",3.7,2025-12-06T20:14:35.903545
+STA1099,Blink Washington #4,5385 Pine St,Washington,DC,74802,38.853092,-77.003092,Level 2,Blink,4,5,22,0.27,False,"[""Restaurant"", ""WiFi""]",4.8,2025-12-06T20:14:35.903545
+STA1100,EVgo Washington #5,2612 Main St,Washington,DC,91880,38.821786,-77.047937,Tesla Supercharger,EVgo,0,11,250,0.36,True,"[""Restrooms"", ""Waiting Area""]",3.5,2025-12-06T20:14:35.903545
+STA1101,EVgo Boston #1,5680 Cedar St,Boston,MA,44459,42.278613,-70.996725,Level 2,EVgo,3,5,22,0.28,True,"[""Restrooms""]",3.9,2025-12-06T20:14:35.903545
+STA1102,Tesla Boston #2,4124 Pine St,Boston,MA,15657,42.39416,-71.111898,Level 2,Tesla,1,3,22,0.31,False,"[""Restaurant"", ""WiFi"", ""Shopping"", ""Coffee""]",4.6,2025-12-06T20:14:35.903545
+STA1103,Tesla Boston #3,8100 Main St,Boston,MA,93151,42.400185,-70.98973,Tesla Supercharger,Tesla,1,9,250,0.41,True,"[""Waiting Area"", ""Restaurant"", ""WiFi"", ""Restrooms""]",4.5,2025-12-06T20:14:35.903545
+STA1104,Tesla Boston #4,3477 Main St,Boston,MA,26504,42.403116,-71.091279,DC Fast,Tesla,0,10,350,0.36,True,"[""WiFi""]",4.4,2025-12-06T20:14:35.903545
+STA1105,Blink Boston #5,9375 Oak St,Boston,MA,29569,42.334941,-71.027312,CHAdeMO,Blink,1,2,11,0.21,True,"[""Restaurant""]",4.3,2025-12-06T20:14:35.903545
+STA1106,EVgo El Paso #1,2020 Oak St,El Paso,TX,22935,31.691465,-106.498284,Level 2,EVgo,3,4,22,0.21,True,"[""Restrooms"", ""Restaurant"", ""Shopping"", ""WiFi""]",4.1,2025-12-06T20:14:35.903545
+STA1107,EVgo El Paso #2,5743 Maple St,El Paso,TX,18922,31.664489,-106.49367,Tesla Supercharger,EVgo,0,5,150,0.45,False,"[""Coffee"", ""Restrooms"", ""WiFi""]",4.7,2025-12-06T20:14:35.903545
+STA1108,Blink El Paso #3,2280 Oak St,El Paso,TX,74135,31.859325,-106.473391,CHAdeMO,Blink,4,6,22,0.32,True,"[""Restaurant""]",4.3,2025-12-06T20:14:35.903545
+STA1109,ChargePoint El Paso #4,769 Main St,El Paso,TX,72944,31.846783,-106.448397,CHAdeMO,ChargePoint,0,5,11,0.31,True,"[""Waiting Area""]",4.3,2025-12-06T20:14:35.903545
+STA1110,Volta El Paso #5,7887 Cedar St,El Paso,TX,21579,31.6833,-106.54111,DC Fast,Volta,6,10,150,0.45,False,"[""Waiting Area"", ""Restrooms"", ""Shopping"", ""Coffee""]",4.8,2025-12-06T20:14:35.904107
+STA1111,EVgo Nashville #1,4086 Maple St,Nashville,TN,64810,36.261155,-86.815564,Level 2,EVgo,5,5,7.2,0.34,False,"[""Restaurant"", ""WiFi"", ""Coffee"", ""Waiting Area""]",4.2,2025-12-06T20:14:35.904107
+STA1112,Tesla Nashville #2,9609 Maple St,Nashville,TN,66866,36.086571,-86.792214,CCS Combo,Tesla,1,2,11,0.34,True,"[""Coffee"", ""Shopping"", ""Waiting Area""]",3.8,2025-12-06T20:14:35.904107
+STA1113,EVgo Nashville #3,5012 Pine St,Nashville,TN,98879,36.23946,-86.770678,Level 2,EVgo,2,6,11,0.28,False,"[""WiFi"", ""Waiting Area"", ""Restrooms""]",4.9,2025-12-06T20:14:35.904107
+STA1114,Electrify America Nashville #4,2850 Pine St,Nashville,TN,84315,36.219009,-86.746865,Tesla Supercharger,Electrify America,1,4,150,0.5,True,"[""WiFi"", ""Waiting Area"", ""Shopping""]",4.4,2025-12-06T20:14:35.904107
+STA1115,EVgo Nashville #5,4784 Oak St,Nashville,TN,92098,36.16663,-86.875212,Level 2,EVgo,2,3,7.2,0.23,False,"[""Coffee""]",5.0,2025-12-06T20:14:35.904107
+STA1116,Tesla Detroit #1,250 Oak St,Detroit,MI,65419,42.280984,-83.10912,CCS Combo,Tesla,2,2,22,0.32,True,"[""Coffee"", ""WiFi""]",4.6,2025-12-06T20:14:35.904107
+STA1117,Electrify America Detroit #2,6834 Main St,Detroit,MI,59587,42.294009,-82.95663,CCS Combo,Electrify America,1,3,7.2,0.21,False,"[""WiFi"", ""Shopping""]",4.3,2025-12-06T20:14:35.904107
+STA1118,Tesla Detroit #3,5369 Main St,Detroit,MI,31531,42.334884,-83.125162,Tesla Supercharger,Tesla,3,5,150,0.43,True,"[""WiFi"", ""Shopping"", ""Waiting Area"", ""Restaurant""]",5.0,2025-12-06T20:14:35.904107
+STA1119,ChargePoint Detroit #4,5167 Main St,Detroit,MI,75467,42.31821,-83.010337,Tesla Supercharger,ChargePoint,5,12,150,0.42,True,"[""WiFi""]",4.3,2025-12-06T20:14:35.904107
+STA1120,Blink Detroit #5,632 Pine St,Detroit,MI,70833,42.385768,-83.075761,CHAdeMO,Blink,4,4,22,0.31,True,"[""Restaurant"", ""Waiting Area""]",3.6,2025-12-06T20:14:35.904107
+STA1121,Electrify America Memphis #1,9292 Pine St,Memphis,TN,28593,35.082702,-89.977237,CCS Combo,Electrify America,0,2,7.2,0.27,True,"[""Shopping"", ""Waiting Area""]",4.3,2025-12-06T20:14:35.904107
+STA1122,Electrify America Memphis #2,3291 Cedar St,Memphis,TN,71510,35.171496,-89.968037,Level 2,Electrify America,1,4,7.2,0.25,False,"[""Restrooms"", ""Restaurant"", ""Waiting Area"", ""Shopping""]",3.7,2025-12-06T20:14:35.904107
+STA1123,Electrify America Memphis #3,1318 Main St,Memphis,TN,15146,35.245356,-89.950204,CHAdeMO,Electrify America,6,6,7.2,0.31,False,"[""WiFi"", ""Waiting Area"", ""Shopping""]",4.4,2025-12-06T20:14:35.904107
+STA1124,Volta Memphis #4,6880 Maple St,Memphis,TN,14100,35.068864,-89.967553,Level 2,Volta,3,5,22,0.29,True,"[""Restrooms"", ""Restaurant""]",4.0,2025-12-06T20:14:35.904107
+STA1125,Tesla Memphis #5,7118 Oak St,Memphis,TN,46425,35.168697,-90.054161,Tesla Supercharger,Tesla,3,10,250,0.41,False,"[""Coffee""]",4.6,2025-12-06T20:14:35.904107
